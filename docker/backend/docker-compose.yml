@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  leadtech_backend:
+    image: leadtech_backend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /app/testlead:/app
